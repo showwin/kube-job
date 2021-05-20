@@ -210,7 +210,7 @@ func (j *Job) WaitJob(ctx context.Context, job *v1.Job, ignoreSidecar bool) erro
 func (j *Job) WaitJobComplete(ctx context.Context, job *v1.Job, ignoreSidecar bool) error {
 retry:
 	for {
-		time.Sleep(3 * time.Second)
+		time.Sleep(20 * time.Second)
 		running, err := j.client.BatchV1().Jobs(job.Namespace).Get(ctx, job.Name, metav1.GetOptions{})
 		if err != nil {
 			return err
