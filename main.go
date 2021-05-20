@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/h3poteto/kube-job/cmd"
+	"github.com/showwin/kube-job/cmd"
 )
 
 func main() {

@@ -1,4 +1,4 @@
-module github.com/h3poteto/kube-job
+module github.com/showwin/kube-job
 
 go 1.16
 
